@@ -3,205 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Pushkarjay Ajay</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
-            color: #444;
-            margin: 20px 0;
-            animation: slideInDown 1s ease-out;
-        }
-        .contact-info, .links {
-            text-align: center;
-            padding: 10px;
-            background: #f0f0f0;
-        }
-        .links a {
-            color: #007BFF;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .links a:hover {
-            color: #0056b3;
-        }
-        .section {
-            padding: 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
-        .section:nth-child(odd) {
-            background: #e8f4ff; /* Light blue */
-        }
-        .section:nth-child(even) {
-            background: #ffefe8; /* Light coral */
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes slideInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background: #007BFF;
-            color: white;
-            font-size: 0.9em;
-        }
-    </style>
+    <title>Pushkarjay Ajay | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Pushkarjay Ajay</h1>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> +91-8210164935</p>
-            <p><strong>Email:</strong> pushkarjay.ajay1@gmail.com</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pushkarjay<span>Ajay</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
         </div>
-        <div class="links">
-            <a href="https://linkedin.com/in/Pushkarjay">LinkedIn</a> |
-            <a href="https://github.com/Pushkarjay">GitHub</a> |
-            <a href="https://leetcode.com/u/pushkarjay">LeetCode</a> |
-            <a href="https://hackerrank.com/profile/pushkarjayajay1">HackerRank</a>
-        </div>
+    </header>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, C, and AI/ML tools, with hands-on experience in web technologies and cyber security. Actively seeking an internship to leverage technical expertise and enhance professional growth.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Pushkarjay Ajay</span></h1>
+                <h2>Computer Science Student & AI Enthusiast</h2>
+                <p>Dedicated to solving complex problems through technology</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for profile image -->
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, C, Java (Basic)</li>
-                <li><strong>Operating Systems:</strong> Windows, Linux</li>
-                <li><strong>AI/ML Tools:</strong> Random Forest Classifier, Tkinter (Python GUI)</li>
-                <li><strong>Web Development:</strong> HTML, SQL</li>
-                <li><strong>Tools & Platforms:</strong> Microsoft Office Suite (Excel, Word, PowerPoint)</li>
-            </ul>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem Solving & Analytical Thinking</li>
-                <li>Effective Communication & Teamwork</li>
-                <li>Time Management & Organization</li>
-            </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, AI/ML tools, and cybersecurity, with hands-on experience in video processing and project management. Actively seeking opportunities to leverage technical expertise and grow professionally.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>KIIT University, Bhubaneswar</strong> (2022 – 2026)<br>Bachelor of Technology (B.Tech) in Computer Science & Engineering</li>
-                <li><strong>Sri Chaitanya Junior College, Hyderabad</strong> (2022)<br>Intermediate (12th Grade) Percentage: 93.5%</li>
-                <li><strong>Sri Chaitanya School, Hyderabad</strong> (2020)<br>High School (10th Grade) CGPA: 10.0</li>
-            </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h4>Programming Languages</h4>
+                            <p>Python, C, Java (Basic)</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>AI/ML Tools</h4>
+                            <p>OpenCV, NumPy, Pillow, Random Forest Classifier</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Cybersecurity</h4>
+                            <p>Predictive Analytics</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Video Processing</h4>
+                            <p>Object Detection, Virtual Prototyping</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Web Development</h4>
+                            <p>HTML, SQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Operating Systems</h4>
+                            <p>Windows, Linux</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Version Control</h4>
+                            <p>Git & GitHub</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Machine Learning</h4>
+                            <p>Automated Machine Learning (AutoML)</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Tools & Platforms</h4>
+                            <p>Microsoft Office Suite (Excel, Word, PowerPoint)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h4>Problem Solving</h4>
+                            <p>Analytical Thinking & Project Management</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Teamwork</h4>
+                            <p>Communication & Organizational Skills</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Critical Thinking</h4>
+                            <p>Strategic Thinking</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Leadership</h4>
+                            <p>Decision-Making, Risk Management & Ethics</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Ethics</h4>
+                            <p>Ethical Theories and Frameworks</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Mathematical Skills</h4>
+                            <p>Optimization & Logical Reasoning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li><strong>Hamari Pahchan NGO (via Internshala)</strong> (Oct 2024 – Nov 2024)<br>Social Entrepreneurship Intern
-                    <ul>
-                        <li>Managed community development projects to promote social impact.</li>
-                        <li>Gained hands-on experience in project planning and execution.</li>
-                    </ul>
-                </li>
-                <li><strong>Aican Automate (in association with Teachnook)</strong> (Nov 2022 – Dec 2022)<br>AI/ML Intern
-                    <ul>
-                        <li>Developed machine learning models for predictive analysis.</li>
-                        <li>Worked on AI-driven automation solutions.</li>
-                    </ul>
-                </li>
-            </ul>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
+                        <h4>KIIT University, Bhubaneswar</h4>
+                        <p class="timeline-date">2022 – 2026</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intermediate (12th Grade)</h3>
+                        <h4>Sri Chaitanya Junior College, Hyderabad</h4>
+                        <p class="timeline-date">2022</p>
+                        <p>Percentage: 93.5%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>High School (10th Grade)</h3>
+                        <h4>Sri Chaitanya School, Hyderabad</h4>
+                        <p class="timeline-date">2020</p>
+                        <p>CGPA: 10.0</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Exoplanet Detection Using AI:</strong> Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. Achieved significant predictive accuracy and data insights.</li>
-                <li><strong>Python Countdown Timer:</strong> Designed a timer with Tkinter, featuring start, stop, pause, and reset functionality.</li>
-            </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intern - Video/Image Processing</h3>
+                        <h4>CHESS, DRDO (Hyderabad)</h4>
+                        <p class="timeline-date">Dec 2024 – Jan 2025</p>
+                        <ul>
+                            <li>Developed a framework for image preprocessing using OpenCV, NumPy, and Pillow.</li>
+                            <li>Integrated video analytics tools for data extraction and automated processes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Social Entrepreneurship Intern</h3>
+                        <h4>Hamari Pahchan NGO</h4>
+                        <p class="timeline-date">Oct 2024 – Nov 2024</p>
+                        <ul>
+                            <li>Managed community development projects promoting social impact.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI/ML Intern</h3>
+                        <h4>Aican Automate (via Teachnook)</h4>
+                        <p class="timeline-date">Nov 2022 – Dec 2022</p>
+                        <ul>
+                            <li>Developed machine learning models and predictive automation solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li><strong>Social Entrepreneurship:</strong> Hamari Pahchan NGO (Certificate ID: 42n2o0palj0)</li>
-                <li><strong>AI/ML Internship:</strong> Aican Automate (Nov 2022 – Dec 2022)</li>
-            </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Exoplanet Detection Using AI</h3>
+                        <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Python Countdown Timer</h3>
+                        <p>Developed a timer with Tkinter featuring start, stop, pause, and reset functionality.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>GUI Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card add-project">
+                    <div class="project-content">
+                        <h3>Add Your Project</h3>
+                        <p>This is a placeholder for your future projects. You can add details later.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">Add Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Chess</li>
-                <li>Badminton</li>
-                <li>Traveling</li>
-            </ul>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <h3>Business Analytics for Decision Making</h3>
+                    <p>University of Colorado Boulder</p>
+                    <p class="credential">Credential ID: VXTRVYFFPHOD</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Business for Good: Fundamentals of Corporate Responsibility</h3>
+                    <p>London Business School</p>
+                    <p class="credential">Credential ID: NPAKXML0IPF4</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Corporate Governance</h3>
+                    <p>Coursera</p>
+                    <p class="credential">Credential ID: FR2YEW6326XB</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Ethical Decision Making for Success in the Tech Industry</h3>
+                    <p>University of Colorado Boulder</p>
+                    <p class="credential">Credential ID: 6UDJ9X3RGWGC</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Geekster</p>
+                    <p class="credential">Skills: Git, GitHub</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Strategy and Game Theory for Management</h3>
+                    <p>Indian Institute of Management Ahmedabad</p>
+                    <p class="credential">Credential ID: Y8ME5N5EWT4J</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Aican Certified: Artificial Intelligence</h3>
+                    <p>AICAN Private Limited</p>
+                    <p class="credential">Credential ID: TNINTC22-2053</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Artificial Intelligence Certification</h3>
+                    <p>Wissenaire, IIT Bhubaneswar</p>
+                    <p class="credential">Credential ID: TNINTC22-4357</p>
+                </div>
+                <div class="certification-card">
+                    <h3>Social Entrepreneurship</h3>
+                    <p>Hamari Pahchan NGO</p>
+                    <p class="credential">Certificate ID: 42n2o0palj0</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="footer">
-            <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Chess</h3>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-badminton"></i>
+                    </div>
+                    <h3>Badminton</h3>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Traveling</h3>
+                </div>
+                <div class="hobby-item add-hobby">
+                    <div class="hobby-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Add More</h3>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-8210164935</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>pushkarjay.ajay1@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p>linkedin.com/in/Pushkarjay</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p>github.com/Pushkarjay</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
