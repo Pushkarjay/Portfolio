@@ -1,5 +1,18 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize AOS animation library
+  // Declare AOS if it's not already available globally
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 800,
+      easing: "ease",
+      once: true,
+      offset: 100,
+    })
+  } else {
+    console.warn("AOS is not defined. Make sure AOS library is included in your project.")
+  }
+
   // Mobile Navigation Toggle
   const hamburger = document.querySelector(".hamburger")
   const navLinks = document.querySelector(".nav-links")
@@ -49,6 +62,108 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth",
         })
       }
+    })
+  })
+
+  // Text Rotation for Hero Section
+  const TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate
+    this.el = el
+    this.loopNum = 0
+    this.period = Number.parseInt(period, 10) || 2000
+    this.txt = ""
+    this.tick()
+    this.isDeleting = false
+  }
+
+  TxtRotate.prototype.tick = function () {
+    const i = this.loopNum % this.toRotate.length
+    const fullTxt = this.toRotate[i]
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1)
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1)
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
+    
+    let delta = 200 - Math.random() * 100
+
+    if (this.isDeleting) {
+      delta /= 2
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period
+      this.isDeleting = true
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false
+      this.loopNum++
+      delta = 500
+    }
+
+    setTimeout(() => {
+      this.tick()
+    }, delta)
+  }
+
+  window.onload = () => {
+    const elements = document.getElementsByClassName("txt-rotate")
+    for (let i = 0; i < elements.length; i++) {
+      const toRotate = elements[i].getAttribute("data-rotate")
+      const period = elements[i].getAttribute("data-period")
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period)
+      }
+    }
+
+    // INJECT CSS
+    const css = document.createElement("style")
+    css.type = "text/css"
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid var(--primary-color) }"
+    document.body.appendChild(css)
+  }
+
+  // Project Filtering
+  const filterBtns = document.querySelectorAll(".filter-btn")
+  const projectCards = document.querySelectorAll(".project-card")
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterBtns.forEach((btn) => btn.classList.remove("active"))
+
+      // Add active class to clicked button
+      btn.classList.add("active")
+
+      const filterValue = btn.getAttribute("data-filter")
+
+      projectCards.forEach((card) => {
+        if (filterValue === "all") {
+          card.style.display = "block"
+          setTimeout(() => {
+            card.style.opacity = "1"
+            card.style.transform = "translateY(0)"
+          }, 100)
+        } else {
+          const categories = card.getAttribute("data-category").split(" ")
+
+          if (categories.includes(filterValue)) {
+            card.style.display = "block"
+            setTimeout(() => {
+              card.style.opacity = "1"
+              card.style.transform = "translateY(0)"
+            }, 100)
+          } else {
+            card.style.opacity = "0"
+            card.style.transform = "translateY(20px)"
+            setTimeout(() => {
+              card.style.display = "none"
+            }, 300)
+          }
+        }
+      })
     })
   })
 

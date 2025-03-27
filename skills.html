@@ -6,8 +6,9 @@
     <title>Skills | Pushkarjay Ajay</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header -->
@@ -20,7 +21,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -36,78 +37,411 @@
         </div>
     </header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Page Banner -->
+    <section class="page-banner">
         <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">Skills</h2>
-            <div class="skills-container">
-                <div class="skills-category animate__animated animate__fadeInUp">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <h4>Programming Languages</h4>
-                            <p>Python, C, Java (Basic)</p>
+            <h1>My Skills</h1>
+            <p>A comprehensive overview of my technical and soft skills</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <!-- Programming Languages -->
+            <div class="skills-category-block" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>AI/ML Tools</h4>
-                            <p>OpenCV, NumPy, Pillow, Random Forest Classifier</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Cybersecurity</h4>
-                            <p>Predictive Analytics</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>C</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Video Processing</h4>
-                            <p>Object Detection, Virtual Prototyping</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Web Development</h4>
-                            <p>HTML, SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Operating Systems</h4>
-                            <p>Windows, Linux</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>Version Control</h4>
-                            <p>Git & GitHub</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>Machine Learning</h4>
-                            <p>Automated Machine Learning (AutoML)</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>Tools & Platforms</h4>
-                            <p>Microsoft Office Suite (Excel, Word, PowerPoint)</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>SQL</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-category animate__animated animate__fadeInUp animate__delay-1s">
-                    <h3>Soft Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <h4>Problem Solving</h4>
-                            <p>Analytical Thinking & Project Management</p>
+            </div>
+
+            <!-- AI & Data Science -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="100">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Data Science</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                        <h4>OpenCV</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Teamwork</h4>
-                            <p>Communication & Organizational Skills</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                        <h4>NumPy</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Critical Thinking</h4>
-                            <p>Strategic Thinking</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-table"></i></div>
+                        <h4>Pandas</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Leadership</h4>
-                            <p>Decision-Making, Risk Management & Ethics</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Matplotlib</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Ethics</h4>
-                            <p>Ethical Theories and Frameworks</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <h4>Artificial Intelligence</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
-                        <div class="skill-item">
-                            <h4>Mathematical Skills</h4>
-                            <p>Optimization & Logical Reasoning</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h4>AutoML</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-search"></i></div>
+                        <h4>Object Detection</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h4>Predictive Analytics</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Technologies</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                        <h4>VS Code</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <h4>AWS</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Cloud Computing</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                        <h4>Linux</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>PostgreSQL</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-window-restore"></i></div>
+                        <h4>Windows OS</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Knowledge -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="300">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industry Knowledge</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Cybersecurity</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-video"></i></div>
+                        <h4>Video Processing</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-vr-cardboard"></i></div>
+                        <h4>Virtual Prototyping</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h4>Project Management</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Business Analytics</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cog"></i></div>
+                        <h4>Operational Efficiency</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interpersonal Skills -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="400">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Interpersonal Skills</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <h4>Communication</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+                        <h4>Teamwork</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Problem Solving</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Critical Thinking</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chess"></i></div>
+                        <h4>Strategic Thinking</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                        <h4>Organization Skills</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h4>Ethics in Decision-Making</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-search-plus"></i></div>
+                        <h4>In-depth Analysis</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="500">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Languages</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-language"></i></div>
+                        <h4>English</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-language"></i></div>
+                        <h4>Hindi</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="skills-category-block" data-aos="fade-up" data-aos-delay="600">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Other Skills</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                        <h4>Microsoft Office</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Exoplanet Research</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h4>Automated Processes</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                        <h4>Mathematical Optimization</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Risk Management</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                        <h4>Social Entrepreneurship</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-table-tennis"></i></div>
+                        <h4>Badminton</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
@@ -119,17 +453,41 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                <div class="footer-logo">
+                    <h2>Pushkarjay<span>Ajay</span></h2>
+                    <p>Computer Science Student & AI Enthusiast</p>
                 </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Me</h3>
+                    <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
+                    <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

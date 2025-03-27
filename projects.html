@@ -6,8 +6,9 @@
     <title>Projects | Pushkarjay Ajay</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header -->
@@ -23,7 +24,7 @@
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -36,37 +37,186 @@
         </div>
     </header>
 
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Showcasing my technical skills and creative solutions</p>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card animate__animated animate__fadeInUp">
+                <!-- HMart Project -->
+                <div class="project-card" id="hmart" data-category="web" data-aos="fade-up">
+                    <div class="project-img">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
                     <div class="project-content">
-                        <h3>Exoplanet Detection Using AI</h3>
-                        <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets.</p>
+                        <h3>HMart - E-commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with product management, user authentication, and payment integration. Features include product search, filtering, cart management, and responsive design.</p>
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>Data Analysis</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>PostgreSQL</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Full-stack Developer</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">3 months</span>
+                            </div>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn small-btn">View Details</a>
+                            <a href="#" class="btn small-btn">View Demo</a>
                             <a href="#" class="btn small-btn secondary-btn">Source Code</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
+                
+                <!-- Flipclock Project -->
+                <div class="project-card" id="flipclock" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flipclock - Interactive Timer</h3>
+                        <p>An interactive flip clock timer with customizable themes and alarm functionality. Features include countdown, stopwatch, and world clock modes with a visually appealing flip animation.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Animation</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Frontend Developer</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">1 month</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Research Paper Project -->
+                <div class="project-card" id="research" data-category="research ai" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Comparative Analysis of VGG16 and ResNet50 Architectures on CIFAR-10 Image Classification</h3>
+                        <p>Research paper comparing the performance, accuracy, and efficiency of VGG16 and ResNet50 deep learning architectures on the CIFAR-10 dataset for image classification tasks.</p>
+                        <div class="project-tags">
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Research</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Lead Researcher</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">4 months</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Paper</a>
+                            <a href="#" class="btn small-btn secondary-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Exoplanet Detection Project -->
+                <div class="project-card" id="exoplanet" data-category="ai" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Exoplanet Detection Using AI</h3>
+                        <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. The model analyzes stellar light curves to detect transit signatures indicative of orbiting planets.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                            <span>Astronomy</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Data Scientist</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">2 months</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Project</a>
+                            <a href="#" class="btn small-btn secondary-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Python Countdown Timer -->
+                <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-img">
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3>Python Countdown Timer</h3>
-                        <p>Developed a timer with Tkinter featuring start, stop, pause, and reset functionality.</p>
+                        <p>Developed a timer with Tkinter featuring start, stop, pause, and reset functionality. Includes customizable alerts and a clean, user-friendly interface.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Tkinter</span>
                             <span>GUI Development</span>
                         </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Developer</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">2 weeks</span>
+                            </div>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="btn small-btn">View Details</a>
+                            <a href="#" class="btn small-btn">View Project</a>
                             <a href="#" class="btn small-btn secondary-btn">Source Code</a>
                         </div>
                     </div>
@@ -75,21 +225,56 @@
         </div>
     </section>
 
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Interested in working together?</h2>
+                <p>Let's discuss how I can contribute to your project or team.</p>
+                <a href="contact.html" class="btn primary-btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                <div class="footer-logo">
+                    <h2>Pushkarjay<span>Ajay</span></h2>
+                    <p>Computer Science Student & AI Enthusiast</p>
                 </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Me</h3>
+                    <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
+                    <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
