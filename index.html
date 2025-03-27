@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Pushkarjay Ajay</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+            animation: slideInDown 1s ease-out;
+        }
+        .contact-info, .links {
+            text-align: center;
+            padding: 10px;
+            background: #f0f0f0;
+        }
+        .links a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #0056b3;
+        }
+        .section {
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .section:nth-child(odd) {
+            background: #e8f4ff; /* Light blue */
+        }
+        .section:nth-child(even) {
+            background: #ffefe8; /* Light coral */
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pushkarjay Ajay</h1>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +91-8210164935</p>
+            <p><strong>Email:</strong> pushkarjay.ajay1@gmail.com</p>
+        </div>
+        <div class="links">
+            <a href="https://linkedin.com/in/Pushkarjay">LinkedIn</a> |
+            <a href="https://github.com/Pushkarjay">GitHub</a> |
+            <a href="https://leetcode.com/u/pushkarjay">LeetCode</a> |
+            <a href="https://hackerrank.com/profile/pushkarjayajay1">HackerRank</a>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, C, and AI/ML tools, with hands-on experience in web technologies and cyber security. Actively seeking an internship to leverage technical expertise and enhance professional growth.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C, Java (Basic)</li>
+                <li><strong>Operating Systems:</strong> Windows, Linux</li>
+                <li><strong>AI/ML Tools:</strong> Random Forest Classifier, Tkinter (Python GUI)</li>
+                <li><strong>Web Development:</strong> HTML, SQL</li>
+                <li><strong>Tools & Platforms:</strong> Microsoft Office Suite (Excel, Word, PowerPoint)</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving & Analytical Thinking</li>
+                <li>Effective Communication & Teamwork</li>
+                <li>Time Management & Organization</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>KIIT University, Bhubaneswar</strong> (2022 – 2026)<br>Bachelor of Technology (B.Tech) in Computer Science & Engineering</li>
+                <li><strong>Sri Chaitanya Junior College, Hyderabad</strong> (2022)<br>Intermediate (12th Grade) Percentage: 93.5%</li>
+                <li><strong>Sri Chaitanya School, Hyderabad</strong> (2020)<br>High School (10th Grade) CGPA: 10.0</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Hamari Pahchan NGO (via Internshala)</strong> (Oct 2024 – Nov 2024)<br>Social Entrepreneurship Intern
+                    <ul>
+                        <li>Managed community development projects to promote social impact.</li>
+                        <li>Gained hands-on experience in project planning and execution.</li>
+                    </ul>
+                </li>
+                <li><strong>Aican Automate (in association with Teachnook)</strong> (Nov 2022 – Dec 2022)<br>AI/ML Intern
+                    <ul>
+                        <li>Developed machine learning models for predictive analysis.</li>
+                        <li>Worked on AI-driven automation solutions.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Exoplanet Detection Using AI:</strong> Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. Achieved significant predictive accuracy and data insights.</li>
+                <li><strong>Python Countdown Timer:</strong> Designed a timer with Tkinter, featuring start, stop, pause, and reset functionality.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Social Entrepreneurship:</strong> Hamari Pahchan NGO (Certificate ID: 42n2o0palj0)</li>
+                <li><strong>AI/ML Internship:</strong> Aican Automate (Nov 2022 – Dec 2022)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Chess</li>
+                <li>Badminton</li>
+                <li>Traveling</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
