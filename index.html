@@ -6,16 +6,22 @@
     <title>Pushkarjay Ajay | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
-<body>
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Pushkarjay<span>Ajay</span></h1>
+                <a href="index.html">
+                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
+                </a>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -28,6 +34,9 @@
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
                 <div class="hamburger">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -39,34 +48,59 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-greeting">Hello, I'm</div>
-                <h1 class="hero-name">Pushkarjay <span>Ajay</span></h1>
-                <div class="hero-title">
-                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Computer Science Student", "AI Enthusiast", "Problem Solver" ]'></span>
+                <div class="hero-subtitle">Hello, I'm</div>
+                <h1 class="hero-title glitch" data-text="Pushkarjay Ajay">Pushkarjay Ajay</h1>
+                <div class="hero-description">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                 </div>
-                <p class="hero-description">Dedicated to solving complex problems through technology</p>
-                <div class="hero-buttons">
+                <p class="hero-text">Dedicated to solving complex problems through technology</p>
+                <div class="hero-cta">
                     <a href="contact.html" class="btn primary-btn">Contact Me</a>
                     <a href="projects.html" class="btn secondary-btn">View Projects</a>
+                    <a href="https://bit.ly/pushkarjay_cv" target="_blank" class="btn outline-btn">Download CV <i class="fas fa-download"></i></a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Pushkarjay" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/pushkarjay" target="_blank" class="social-icon">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank" class="social-icon">
+                        <i class="fab fa-hackerrank"></i>
+                    </a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user"></i>
+                <div class="hero-image-container">
+                    <div class="profile-placeholder">
+                        <!--<i class="fas fa-user"></i>-->
+                        <img src="image.jpeg" alt="Profile Image">
+                    </div>
+                    <div class="hero-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-down">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="scroll-text">Scroll Down</span>
+                    <span class="arrow">&#8595;</span>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -74,177 +108,526 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-subtitle">Professional Summary</div>
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
             <div class="about-content">
-                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
-                    <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, AI/ML tools, and cybersecurity, with hands-on experience in video processing and project management. Actively seeking opportunities to leverage technical expertise and grow professionally.</p>
-                    <div class="about-stats">
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-title">Years Coding</div>
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <div class="about-image-container">
+                        <div class="profile-placeholder">
+                            <!--<i class="fas fa-user"></i>-->
+                            <img src="image.jpeg" alt="Profile Image">
                         </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-title">Projects</div>
+                        <div class="experience-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Years of Experience</span>
                         </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="stat-number">9+</div>
-                            <div class="stat-title">Certifications</div>
-                        </div>
-                    </div>
-                    <div class="about-cta" data-aos="fade-up" data-aos-delay="600">
-                        <a href="contact.html" class="btn primary-btn">Get In Touch</a>
-                        <a href="about.html" class="btn outline-btn">Learn More</a>
                     </div>
                 </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Computer Science Student & AI Enthusiast</h3>
+                    <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, AI/ML tools, and cybersecurity, with hands-on experience in video processing and project management.</p>
+                    <p>Actively seeking opportunities to leverage technical expertise and grow professionally.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Pushkarjay Ajay</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">
+                                <a href="mailto:pushkarjay.ajay1@gmail.com">pushkarjay.ajay1@gmail.com</a>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">
+                                <a href="tel:+918210164935">+91-8210164935</a>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Bhubaneswar, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="contact.html" class="btn primary-btn">Contact Me</a>
+                        <a href="https://bit.ly/pushkarjay_cv" target="_blank" class="btn outline-btn">Download CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Skills</span>
+                <h2 class="section-title">My Expertise</h2>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            
+            <div class="skills-categories">
+                <!-- Technical Skills -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>C</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI & Data Science -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Data Science</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>OpenCV</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h4>NumPy</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <h4>Pandas</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Matplotlib</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>AWS</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>PostgreSQL</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <h4>Linux</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="skills.html" class="btn primary-btn">View All Skills</a>
             </div>
         </div>
     </section>
 
     <!-- Featured Projects Section -->
-    <section id="featured-projects" class="featured-projects">
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Work</span>
                 <h2 class="section-title">Featured Projects</h2>
-                <div class="section-subtitle">Some of my recent work</div>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
-            <div class="featured-grid">
-                <div class="featured-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="featured-content">
-                        <h3>HMart - E-commerce Platform</h3>
-                        <p>A full-stack e-commerce platform with product management, user authentication, and payment integration.</p>
+            
+            <div class="projects-grid">
+                <!-- HMart Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img">
+                        <div class="project-img-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span>JavaScript</span>
                             <span>HTML/CSS</span>
                             <span>PostgreSQL</span>
                         </div>
-                        <div class="project-links">
+                        <h3 class="project-title">HMart - E-commerce Platform</h3>
+                        <p class="project-description">A full-stack e-commerce platform with product management, user authentication, and payment integration.</p>
+                        <div class="project-cta">
                             <a href="projects.html#hmart" class="btn small-btn">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="featured-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="featured-content">
-                        <h3>Exoplanet Detection Using AI</h3>
-                        <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>Data Analysis</span>
+                
+                <!-- Flipclock Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <div class="project-img-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="projects.html#exoplanet" class="btn small-btn">View Details</a>
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Animation</span>
+                        </div>
+                        <h3 class="project-title">Flipclock - Interactive Timer</h3>
+                        <p class="project-description">An interactive flip clock timer with customizable themes and alarm functionality.</p>
+                        <div class="project-cta">
+                            <a href="projects.html#flipclock" class="btn small-btn">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="featured-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="featured-content">
-                        <h3>Research: VGG16 vs ResNet50</h3>
-                        <p>Comparative analysis of VGG16 and ResNet50 architectures on CIFAR-10 image classification.</p>
+                
+                <!-- Research Paper Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img">
+                        <div class="project-img-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-img-placeholder">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span>Deep Learning</span>
                             <span>Computer Vision</span>
                             <span>Research</span>
                         </div>
-                        <div class="project-links">
+                        <h3 class="project-title">VGG16 vs ResNet50 Analysis</h3>
+                        <p class="project-description">Comparative analysis of VGG16 and ResNet50 architectures on CIFAR-10 image classification.</p>
+                        <div class="project-cta">
                             <a href="projects.html#research" class="btn small-btn">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-cta" data-aos="fade-up" data-aos-delay="500">
+            
+            <div class="section-cta" data-aos="fade-up" data-aos-delay="400">
                 <a href="projects.html" class="btn primary-btn">View All Projects</a>
             </div>
         </div>
     </section>
 
-    <!-- Skills Highlight Section -->
-    <section id="skills-highlight" class="skills-highlight">
+    <!-- Education & Experience Section -->
+    <section id="education-experience" class="education-experience">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Skills Highlight</h2>
-                <div class="section-subtitle">My technical expertise</div>
-            </div>
-            <div class="skills-categories">
-                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Programming</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">JavaScript</div>
-                        <div class="skill-tag">C</div>
-                        <div class="skill-tag">HTML/CSS</div>
-                        <div class="skill-tag">SQL</div>
-                    </div>
-                </div>
-                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>AI & Data Science</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">OpenCV</div>
-                        <div class="skill-tag">NumPy</div>
-                        <div class="skill-tag">Pandas</div>
-                        <div class="skill-tag">Matplotlib</div>
-                        <div class="skill-tag">AutoML</div>
-                    </div>
-                </div>
-                <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">Git & GitHub</div>
-                        <div class="skill-tag">VS Code</div>
-                        <div class="skill-tag">AWS</div>
-                        <div class="skill-tag">PostgreSQL</div>
-                        <div class="skill-tag">Linux</div>
-                    </div>
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Education & Experience</h2>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
                 </div>
             </div>
-            <div class="section-cta" data-aos="fade-up" data-aos-delay="500">
-                <a href="skills.html" class="btn primary-btn">View All Skills</a>
+            
+            <div class="timeline-container">
+                <div class="timeline-tabs">
+                    <button class="timeline-tab active" data-target="education">Education</button>
+                    <button class="timeline-tab" data-target="experience">Experience</button>
+                </div>
+                
+                <div class="timeline-content">
+                    <!-- Education Timeline -->
+                    <div class="timeline active" id="education">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 – 2026</div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
+                                <h4>KIIT University, Bhubaneswar</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h3>Intermediate (12th Grade)</h3>
+                                <h4>Sri Chaitanya Junior College, Hyderabad</h4>
+                                <p>Percentage: 93.5%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h3>High School (10th Grade)</h3>
+                                <h4>Sri Chaitanya School, Hyderabad</h4>
+                                <p>CGPA: 10.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Timeline -->
+                    <div class="timeline" id="experience">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Dec 2024 – Jan 2025</div>
+                            <div class="timeline-content">
+                                <h3>Intern - Video/Image Processing</h3>
+                                <h4>CHESS, DRDO (Hyderabad)</h4>
+                                <ul>
+                                    <li>Developed a framework for image preprocessing using OpenCV, NumPy, and Pillow.</li>
+                                    <li>Integrated video analytics tools for data extraction and automated processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Oct 2024 – Nov 2024</div>
+                            <div class="timeline-content">
+                                <h3>Social Entrepreneurship Intern</h3>
+                                <h4>Hamari Pahchan NGO</h4>
+                                <ul>
+                                    <li>Managed community development projects promoting social impact.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Nov 2022 – Dec 2022</div>
+                            <div class="timeline-content">
+                                <h3>AI/ML Intern</h3>
+                                <h4>Aican Automate (via Teachnook)</h4>
+                                <ul>
+                                    <li>Developed machine learning models and predictive automation solutions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-title">Lines of Code</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-title">Projects Completed</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="stat-number" data-count="9">0</div>
+                    <div class="stat-title">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact-cta" class="contact-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Let's discuss how I can contribute to your team.</p>
+                <a href="contact.html" class="btn primary-btn">Get In Touch</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Pushkarjay<span>Ajay</span></h2>
-                    <p>Computer Science Student & AI Enthusiast</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Me</h3>
-                    <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                    <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Me</h3>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Pushkarjay<span>Ajay</span></h2>
+                        <p>Computer Science Student & AI Enthusiast</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Me</h3>
+                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
+                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Pushkarjay Ajay.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

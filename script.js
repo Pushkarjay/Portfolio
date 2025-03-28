@@ -1,5 +1,14 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // Preloader
+  window.addEventListener("load", () => {
+    const preloader = document.querySelector(".preloader")
+    preloader.classList.add("hide")
+    setTimeout(() => {
+      preloader.style.display = "none"
+    }, 500)
+  })
+
   // Initialize AOS animation library
   // Declare AOS if it's not already available globally
   if (typeof AOS !== "undefined") {
@@ -8,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       easing: "ease",
       once: true,
       offset: 100,
+      disable: "mobile",
     })
   } else {
     console.warn("AOS is not defined. Make sure AOS library is included in your project.")
@@ -17,10 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger")
   const navLinks = document.querySelector(".nav-links")
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active")
-    navLinks.classList.toggle("active")
-  })
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active")
+      navLinks.classList.toggle("active")
+    })
+  }
 
   // Close mobile menu when a nav link is clicked
   document.querySelectorAll(".nav-links a").forEach((link) => {
@@ -30,6 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+  // Theme Toggle
+  const themeToggle = document.querySelector(".theme-toggle")
+  const body = document.querySelector("body")
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode")
+
+      if (body.classList.contains("light-mode")) {
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>'
+      } else {
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>'
+      }
+    })
+  }
+
   // Sticky Header
   const header = document.querySelector("header")
   const scrollThreshold = 50
@@ -37,33 +65,74 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     if (window.scrollY > scrollThreshold) {
       header.style.padding = "10px 0"
-      header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
+      header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.3)"
     } else {
       header.style.padding = "15px 0"
-      header.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+      header.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.1)"
     }
   })
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault()
+      if (this.getAttribute("href") !== "#") {
+        e.preventDefault()
 
-      const targetId = this.getAttribute("href")
-      if (targetId === "#") return
+        const targetId = this.getAttribute("href")
+        const targetElement = document.querySelector(targetId)
 
-      const targetElement = document.querySelector(targetId)
-      if (targetElement) {
-        const headerHeight = document.querySelector("header").offsetHeight
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight
+        if (targetElement) {
+          const headerHeight = document.querySelector("header").offsetHeight
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight
 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        })
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          })
+        }
       }
     })
   })
+
+  // Typed Text Effect
+  const typedTextElement = document.querySelector(".typed-text")
+
+  if (typedTextElement) {
+    const strings = ["Computer Science Student", "AI Enthusiast", "Problem Solver", "Python Developer"]
+
+    let stringIndex = 0
+    let charIndex = 0
+    let isDeleting = false
+    let typingSpeed = 100
+
+    function type() {
+      const currentString = strings[stringIndex]
+
+      if (isDeleting) {
+        typedTextElement.textContent = currentString.substring(0, charIndex - 1)
+        charIndex--
+        typingSpeed = 50
+      } else {
+        typedTextElement.textContent = currentString.substring(0, charIndex + 1)
+        charIndex++
+        typingSpeed = 100
+      }
+
+      if (!isDeleting && charIndex === currentString.length) {
+        isDeleting = true
+        typingSpeed = 1000 // Pause at end of word
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false
+        stringIndex = (stringIndex + 1) % strings.length
+        typingSpeed = 500 // Pause before typing next word
+      }
+
+      setTimeout(type, typingSpeed)
+    }
+
+    // Start the typing effect
+    setTimeout(type, 1000)
+  }
 
   // Text Rotation for Hero Section
   const TxtRotate = function (el, toRotate, period) {
@@ -87,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
-    
+
     let delta = 200 - Math.random() * 100
 
     if (this.isDeleting) {
@@ -125,50 +194,132 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(css)
   }
 
+  // Timeline Tabs
+  const timelineTabs = document.querySelectorAll(".timeline-tab")
+  const timelines = document.querySelectorAll(".timeline")
+
+  if (timelineTabs.length > 0) {
+    timelineTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        // Remove active class from all tabs and timelines
+        timelineTabs.forEach((t) => t.classList.remove("active"))
+        timelines.forEach((t) => t.classList.remove("active"))
+
+        // Add active class to clicked tab and corresponding timeline
+        tab.classList.add("active")
+        const targetId = tab.getAttribute("data-target")
+        document.getElementById(targetId).classList.add("active")
+      })
+    })
+  }
+
+  // Counter Animation for Stats
+  const statNumbers = document.querySelectorAll(".stat-number")
+
+  function animateCounter() {
+    statNumbers.forEach((stat) => {
+      const target = Number.parseInt(stat.getAttribute("data-count"))
+      const count = Number.parseInt(stat.textContent)
+      const increment = target / 100
+
+      if (count < target) {
+        stat.textContent = Math.ceil(count + increment)
+        setTimeout(animateCounter, 20)
+      } else {
+        stat.textContent = target
+      }
+    })
+  }
+
+  // Start counter animation when stats section is in view
+  const statsSection = document.querySelector(".stats-section")
+
+  if (statsSection) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter()
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      {
+        threshold: 0.5,
+      },
+    )
+
+    observer.observe(statsSection)
+  }
+
+  // Back to Top Button
+  const backToTopBtn = document.querySelector(".back-to-top")
+
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add("active")
+      } else {
+        backToTopBtn.classList.remove("active")
+      }
+    })
+
+    backToTopBtn.addEventListener("click", (e) => {
+      e.preventDefault()
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    })
+  }
+
   // Project Filtering
   const filterBtns = document.querySelectorAll(".filter-btn")
   const projectCards = document.querySelectorAll(".project-card")
 
-  filterBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // Remove active class from all buttons
-      filterBtns.forEach((btn) => btn.classList.remove("active"))
+  if (filterBtns.length > 0) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove active class from all buttons
+        filterBtns.forEach((b) => b.classList.remove("active"))
 
-      // Add active class to clicked button
-      btn.classList.add("active")
+        // Add active class to clicked button
+        btn.classList.add("active")
 
-      const filterValue = btn.getAttribute("data-filter")
+        const filterValue = btn.getAttribute("data-filter")
 
-      projectCards.forEach((card) => {
-        if (filterValue === "all") {
-          card.style.display = "block"
-          setTimeout(() => {
-            card.style.opacity = "1"
-            card.style.transform = "translateY(0)"
-          }, 100)
-        } else {
-          const categories = card.getAttribute("data-category").split(" ")
-
-          if (categories.includes(filterValue)) {
+        projectCards.forEach((card) => {
+          if (filterValue === "all") {
             card.style.display = "block"
             setTimeout(() => {
               card.style.opacity = "1"
               card.style.transform = "translateY(0)"
             }, 100)
           } else {
-            card.style.opacity = "0"
-            card.style.transform = "translateY(20px)"
-            setTimeout(() => {
-              card.style.display = "none"
-            }, 300)
+            const categories = card.getAttribute("data-category").split(" ")
+
+            if (categories.includes(filterValue)) {
+              card.style.display = "block"
+              setTimeout(() => {
+                card.style.opacity = "1"
+                card.style.transform = "translateY(0)"
+              }, 100)
+            } else {
+              card.style.opacity = "0"
+              card.style.transform = "translateY(20px)"
+              setTimeout(() => {
+                card.style.display = "none"
+              }, 300)
+            }
           }
-        }
+        })
       })
     })
-  })
+  }
 
   // Form submission handling
   const contactForm = document.getElementById("contactForm")
+
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault()
