@@ -2,7 +2,4 @@
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ],
-  "static": {
-    "directory": "."
-  }
 }
