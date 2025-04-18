@@ -237,7 +237,7 @@ section {
 
 .outline-btn {
   background-color: transparent;
-  color: var(--text-primary);
+  color: var (--text-primary);
   border: 2px solid var(--accent-blue);
 }
 
@@ -271,6 +271,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Added for proper alignment */
 }
 
 .logo a {
@@ -324,13 +325,15 @@ header .container {
 }
 
 .theme-toggle {
-  margin-left: 20px;
-  cursor: pointer;
+  position: fixed; /* Ensure consistent placement */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
   width: 40px;
   height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--bg-tertiary);
   color: var(--accent-yellow);
@@ -907,6 +910,21 @@ header .container {
   flex-wrap: wrap;
 }
 
+/* About Content Card */
+.about-content-card {
+  background-color: var(--bg-tertiary);
+  padding: 30px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  margin-bottom: 50px;
+}
+
+.about-content-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 /* Skills Section */
 .skills-section {
   background-color: var(--bg-primary);
@@ -1020,6 +1038,12 @@ header .container {
   background: var(--gradient-primary);
   border-radius: 4px;
   transition: width 1.5s ease-in-out;
+  /* Ensure it fills the line for 100% */
+  width: 0; /* Default width */
+}
+
+.skill-card:hover .skill-progress {
+  width: 100%; /* Fills the progress bar on hover */
 }
 
 .skill-percent {
@@ -1027,6 +1051,46 @@ header .container {
   text-align: right;
   font-size: 0.8rem;
   color: var(--text-secondary);
+}
+
+.skills-category-card {
+  background-color: var(--bg-tertiary);
+  padding: 30px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  margin-bottom: 50px;
+}
+
+.skills-category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skills-category-card .category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills-category-card .category-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+  font-size: 24px;
+  box-shadow: var(--box-shadow);
+}
+
+.skills-category-card .category-header h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 0;
 }
 
 /* Projects Section */
@@ -1172,6 +1236,21 @@ header .container {
 .project-cta {
   display: flex;
   gap: 10px;
+}
+
+/* Projects Category Card */
+.projects-category-card {
+  background-color: var(--bg-tertiary);
+  padding: 30px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  margin-bottom: 50px;
+}
+
+.projects-category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Education & Experience Section */
@@ -1326,6 +1405,21 @@ header .container {
   border-radius: 50%;
   left: -15px;
   top: 8px;
+}
+
+/* Timeline Item Card */
+.timeline-item-card {
+  background-color: var(--bg-tertiary);
+  padding: 25px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  margin-bottom: 30px;
+}
+
+.timeline-item-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Stats Section */
@@ -1506,7 +1600,25 @@ header .container {
 .social-icons a:hover {
   background-color: var(--accent-red);
   color: white;
-  transform: translateY(-3px) rotate(10deg);
+  transform: translateY(-3px);
+}
+
+.footer-social .social-icons p {
+  margin: 10px 0;
+}
+
+.footer-social .social-icons p a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-social .social-icons p a:hover {
+  color: var(--accent-red);
+}
+
+.footer-social .social-icons p a i {
+  font-size: 1.2rem;
 }
 
 .footer-bottom {
@@ -1521,7 +1633,7 @@ header .container {
 }
 
 .footer-bottom i {
-  color: var(--accent-red);
+  color: var (--accent-red);
 }
 
 /* Back to Top Button */
@@ -1648,6 +1760,11 @@ header .container {
       margin-right: 20px;
   }
 
+  .theme-toggle {
+    top: 10px; /* Adjust spacing for smaller screens */
+    right: 10px; /* Adjust spacing for smaller screens */
+  }
+
   .hamburger {
       display: block;
   }
@@ -1710,4 +1827,70 @@ header .container {
       border-radius: var(--border-radius) !important;
       margin-bottom: 10px;
   }
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--accent-red);
+  margin-right: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--text-secondary);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--accent-red);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-blue);
+  color: white;
 }

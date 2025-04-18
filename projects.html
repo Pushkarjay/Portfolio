@@ -15,7 +15,9 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Pushkarjay<span>Ajay</span></h1>
+                <a href="index.html">
+                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
+                </a>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -28,6 +30,9 @@
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
                 <div class="hamburger">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -48,177 +53,198 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="ai">AI & ML</button>
-                <button class="filter-btn" data-filter="research">Research</button>
-                <button class="filter-btn" data-filter="other">Other</button>
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p>Showcasing my technical skills and creative solutions</p>
             </div>
-            
-            <div class="projects-grid">
-                <!-- HMart Project -->
-                <div class="project-card" id="hmart" data-category="web" data-aos="fade-up">
-                    <div class="project-img">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
+
+            <!-- Web Development -->
+            <div class="projects-category-card">
+                <h3 class="category-title">Web Development</h3>
+                <div class="projects-grid">
+                    <!-- HMart Project -->
+                    <div class="project-card" id="hmart" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>HMart - E-commerce Platform</h3>
+                            <p>A full-stack e-commerce platform with product management, user authentication, and payment integration. Features include product search, filtering, cart management, and responsive design.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>PostgreSQL</span>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Full-stack Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://hmart-nog2.onrender.com/" target="_blank" class="btn small-btn">View Demo</a>
+                                <a href="https://github.com/Pushkarjay/HMart.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>HMart - E-commerce Platform</h3>
-                        <p>A full-stack e-commerce platform with product management, user authentication, and payment integration. Features include product search, filtering, cart management, and responsive design.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>PostgreSQL</span>
-                            <span>Responsive Design</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Role:</span>
-                                <span class="detail-value">Full-stack Developer</span>
+
+                    <!-- Weather Dashboard Project -->
+                    <div class="project-card" id="weather-dashboard" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-cloud-sun"></i>
                             </div>
-                            <!--<div class="detail-item">
-                                <span class="detail-label">Duration:</span>
-                                <span class="detail-value">3 months</span>
-                            </div>-->
                         </div>
-                        <div class="project-links">
-                            <a href="https://hmart-nog2.onrender.com/" target="_blank" class="btn small-btn">View Demo</a>
-                            <a href="https://github.com/Pushkarjay/HMart.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>A responsive weather dashboard application that provides real-time weather updates for any location. Features include a search bar, current weather details, and a 5-day forecast.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>API Integration</span>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Frontend Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://pushkarjay.github.io/weather-dashboard/" target="_blank" class="btn small-btn">View Live</a>
+                                <a href="https://github.com/Pushkarjay/weather-dashboard.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Flipclock Project -->
-                <div class="project-card" id="flipclock" data-category="web" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-img">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-clock"></i>
+            </div>
+
+            <!-- AI & ML -->
+            <div class="projects-category-card">
+                <h3 class="category-title">AI & ML</h3>
+                <div class="projects-grid">
+                    <!-- Research Paper Project -->
+                    <div class="project-card" id="research" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Comparative Analysis of VGG16 and ResNet50 Architectures on CIFAR-10 Image Classification</h3>
+                            <p>Research paper comparing the performance, accuracy, and efficiency of VGG16 and ResNet50 deep learning architectures on the CIFAR-10 dataset for image classification tasks.</p>
+                            <div class="project-tags">
+                                <span>Deep Learning</span>
+                                <span>Computer Vision</span>
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Research</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Lead Researcher</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn">View Paper</a>
+                                <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn secondary-btn">View Code</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Flipclock - Interactive Timer</h3>
-                        <p>An interactive flip clock timer with customizable themes and alarm functionality. Features include countdown, stopwatch, and world clock modes with a visually appealing flip animation.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>Animation</span>
-                            <span>UI/UX</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Role:</span>
-                                <span class="detail-value">Frontend Developer</span>
+
+                    <!-- Exoplanet Detection Project -->
+                    <div class="project-card" id="exoplanet" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-globe"></i>
                             </div>
-                            <!--<div class="detail-item">
-                                <span class="detail-label">Duration:</span>
-                                <span class="detail-value">1 month</span>
-                            </div>-->
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Pushkarjay/Flip-Clock.git" target="_blank" class="btn small-btn">View Demo</a>
-                            <a href="https://github.com/Pushkarjay/Flip-Clock.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                        <div class="project-content">
+                            <h3>Exoplanet Detection Using AI</h3>
+                            <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. The model analyzes stellar light curves to detect transit signatures indicative of orbiting planets.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Data Analysis</span>
+                                <span>Astronomy</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Data Scientist</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn">View Project</a>
+                                <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Research Paper Project -->
-                <div class="project-card" id="research" data-category="research ai" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-img">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Comparative Analysis of VGG16 and ResNet50 Architectures on CIFAR-10 Image Classification</h3>
-                        <p>Research paper comparing the performance, accuracy, and efficiency of VGG16 and ResNet50 deep learning architectures on the CIFAR-10 dataset for image classification tasks.</p>
-                        <div class="project-tags">
-                            <span>Deep Learning</span>
-                            <span>Computer Vision</span>
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Research</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Role:</span>
-                                <span class="detail-value">Lead Researcher</span>
-                            </div>
-                            <!--<div class="detail-item">
-                                <span class="detail-label">Duration:</span>
-                                <span class="detail-value">4 months</span>
-                            </div>-->
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn">View Paper</a>
-                            <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn secondary-btn">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Exoplanet Detection Project -->
-                <div class="project-card" id="exoplanet" data-category="ai" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-img">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Exoplanet Detection Using AI</h3>
-                        <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. The model analyzes stellar light curves to detect transit signatures indicative of orbiting planets.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>Data Analysis</span>
-                            <span>Astronomy</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Role:</span>
-                                <span class="detail-value">Data Scientist</span>
-                            </div>
-                            <!--<div class="detail-item">
-                                <span class="detail-label">Duration:</span>
-                                <span class="detail-value">2 months</span>
-                            </div>-->
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn">View Project</a>
-                            <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Python Countdown Timer -->
-                <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-img">
-                        <div class="project-img-placeholder">
-                            <i class="fas fa-stopwatch"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Python Countdown Timer</h3>
-                        <p>Developed a timer with Tkinter featuring start, stop, pause, and reset functionality. Includes customizable alerts and a clean, user-friendly interface.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>GUI Development</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="detail-item">
-                                <span class="detail-label">Role:</span>
-                                <span class="detail-value">Developer</span>
-                            </div>
-                            <!--<div class="detail-item">
-                                <span class="detail-label">Duration:</span>
-                                <span class="detail-value">2 weeks</span>
-                            </div> -->
+            </div>
+
+            <!-- Other Projects -->
+            <div class="projects-category-card">
+                <h3 class="category-title">Other Projects</h3>
+                <div class="projects-grid">
+                    <!-- Python Countdown Timer -->
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-stopwatch"></i>
                             </div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Pushkarjay/Minor-Project-Python.git" target="_blank" class="btn small-btn">View Project</a>
-                            <a href="https://github.com/Pushkarjay/Minor-Project-Python.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                        <div class="project-content">
+                            <h3>Python Countdown Timer</h3>
+                            <p>Developed a timer with Tkinter featuring start, stop, pause, and reset functionality. Includes customizable alerts and a clean, user-friendly interface.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Tkinter</span>
+                                <span>GUI Development</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Minor-Project-Python.git" target="_blank" class="btn small-btn">View Project</a>
+                                <a href="https://github.com/Pushkarjay/Minor-Project-Python.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flipclock Project -->
+                    <div class="project-card" id="flipclock" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Flipclock - Interactive Timer</h3>
+                            <p>An interactive flip clock timer application with customizable themes and alarm functionality. Features include countdown, stopwatch, and world clock modes with a visually appealing flip animation.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Tkinter</span>
+                                <span>GUI Development</span>
+                                <span>Animation</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Flip-Clock.git" target="_blank" class="btn small-btn">View Demo</a>
+                                <a href="https://github.com/Pushkarjay/Flip-Clock.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -239,44 +265,57 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Pushkarjay<span>Ajay</span></h2>
-                    <p>Computer Science Student & AI Enthusiast</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Me</h3>
-                    <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                    <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Me</h3>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                        <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Pushkarjay<span>Ajay</span></h2>
+                        <p>Computer Science Student & AI Enthusiast</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Me</h3>
+                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
+                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Pushkarjay Ajay.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

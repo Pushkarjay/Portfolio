@@ -14,11 +14,13 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Pushkarjay<span>Ajay</span></h1>
+                <a href="index.html">
+                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
+                </a>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="education.html">Education</a></li>
@@ -27,6 +29,9 @@
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
                 <div class="hamburger">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -42,40 +47,46 @@
             <h2 class="section-title animate__animated animate__fadeIn">Contact Me</h2>
             <div class="contact-container">
                 <div class="contact-info animate__animated animate__fadeInLeft">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p><a href="tel:+918210164935">+91-8210164935</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:pushkarjay.ajay1@gmail.com">pushkarjay.ajay1@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <p><a href="https://linkedin.com/in/Pushkarjay" target="_blank">linkedin.com/in/Pushkarjay</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <p><a href="https://github.com/Pushkarjay" target="_blank">github.com/Pushkarjay</a></p>
+                    <div class="contact-info-wrapper">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p><a href="tel:+918210164935">+91-8210164935</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:pushkarjay.ajay1@gmail.com">pushkarjay.ajay1@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <p><a href="https://linkedin.com/in/Pushkarjay" target="_blank">linkedin.com/in/Pushkarjay</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <p><a href="https://github.com/Pushkarjay" target="_blank">github.com/Pushkarjay</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-twitter"></i>
+                            <p><a href="https://twitter.com/Pushkarjay" target="_blank">twitter.com/Pushkarjay</a></p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form animate__animated animate__fadeInRight">
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
                         </div>
                         <button type="submit" class="btn primary-btn">Send Message</button>
                     </form>
@@ -86,20 +97,57 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Pushkarjay Ajay. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                    <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                    <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Pushkarjay<span>Ajay</span></h2>
+                        <p>Computer Science Student & AI Enthusiast</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Me</h3>
+                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
+                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
+                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Pushkarjay Ajay.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
