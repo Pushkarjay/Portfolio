@@ -9,6 +9,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 - **Education & Experience**: Timeline of my academic and professional journey.
 - **Certifications**: A list of certifications I have earned.
 - **Contact**: Get in touch with me through the contact section.
+- **Theme Persistence**: The selected theme (light or dark) is saved and applied across all pages.
 
 ## Live Demo
 Visit the live site here: [Pushkarjay Ajay Portfolio](https://pushkarjay.github.io/portfolio)

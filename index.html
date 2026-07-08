@@ -65,7 +65,7 @@
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="hero-image-container">
                     <div class="profile-placeholder">
-                        <img src="profile_picture.jpg" alt="Profile Image">
+                        <img src="profile_picture.jpg" alt="Profile Image" loading="lazy">
                     </div>
                     <!-- Decorative Shapes -->
                     <div class="hero-shapes">
@@ -220,7 +220,7 @@
                     <div class="stat-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="stat-number" data-count="3+">0</div>
+                    <div class="stat-number" data-count="3">0</div>
                     <div class="stat-title">Education Milestones</div>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
@@ -245,6 +245,7 @@
         async function fetchAndDisplayContent(url, targetId, limit) {
             try {
                 const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const html = await response.text();
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html;
@@ -259,12 +260,17 @@
                 }
             } catch (error) {
                 console.error(`Failed to fetch content from ${url}:`, error);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:2rem;">Could not load content. Please try again later.</p>';
+                }
             }
         }
 
         async function fetchAndDisplaySkills(url, targetId, limit) {
             try {
                 const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const html = await response.text();
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html;
@@ -279,12 +285,17 @@
                 }
             } catch (error) {
                 console.error(`Failed to fetch skills content from ${url}:`, error);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:2rem;">Could not load content. Please try again later.</p>';
+                }
             }
         }
 
         async function fetchAndDisplayAbout(url, targetId) {
             try {
                 const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const html = await response.text();
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html;
@@ -298,12 +309,17 @@
                 }
             } catch (error) {
                 console.error(`Failed to fetch about content from ${url}:`, error);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.innerHTML = '<p style="color:var(--text-secondary);text-align:center;padding:2rem;">Could not load content. Please try again later.</p>';
+                }
             }
         }
 
         async function fetchAndDisplaySection(url, targetId, selector) {
             try {
                 const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const html = await response.text();
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html;

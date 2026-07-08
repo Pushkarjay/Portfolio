@@ -18,18 +18,20 @@
   --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Shadow for cards */
   --card-border-radius: 10px; /* Border radius for cards */
   --border-radius: 10px; /* General border radius */
+  --transition: all 0.3s ease; /* Smooth transitions */
+  --header-height: 80px;
 }
 
 /* Light Theme Colors */
 /* Define variables for a light theme (future toggle functionality) */
 .light-mode {
-  --bg-primary: #f5f5f5; /* Light background */
-  --bg-secondary: #ffffff; /* White secondary background */
-  --bg-tertiary: #e9e9e9; /* Light tertiary background */
-  --text-primary: #746161; /* Darker text for contrast */
-  --text-secondary: #555555; /* Secondary text color */
-  --header-bg: #ffffff; /* Header background for light mode */
-  --header-text: #000000; /* Header text color for light mode */
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e9e9e9;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --header-bg: #ffffff;
+  --header-text: #1a1a1a;
 }
 
 /* Dark Mode Styles */
@@ -95,7 +97,28 @@ a {
 }
 
 a:hover {
-  color: var(--accent-red); /* Change color on hover */
+  color: var(--accent-red);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent-blue);
+  outline-offset: 3px;
+}
+
+button:focus-visible:not(:active) {
+  outline: 3px solid var(--accent-blue);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Lists */
@@ -308,6 +331,11 @@ header {
   z-index: 1000;
   padding: 15px 0;
   transition: var(--transition);
+}
+
+header.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 header .container {
@@ -1167,6 +1195,23 @@ header .container {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item.hover {
+  border-left-width: 8px;
+}
+
+.certification-card.hover {
+  border-bottom-width: 6px;
+}
+
+.field-error {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .project-img {
@@ -2287,6 +2332,11 @@ header {
   transition: var(--transition);
 }
 
+header.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -3136,6 +3186,23 @@ header .container {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item.hover {
+  border-left-width: 8px;
+}
+
+.certification-card.hover {
+  border-bottom-width: 6px;
+}
+
+.field-error {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .project-img {

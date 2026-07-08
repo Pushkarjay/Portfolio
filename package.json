@@ -1,8 +1,16 @@
 {
+  // The name of the project/package
   "name": "my-v0-project",
+
+  // The version of the project/package
   "version": "0.1.0",
+
+  // Indicates that this project is private and cannot be published to npm
   "private": true,
+
+  // Scripts section defines custom commands that can be run using npm
   "scripts": {
-    "build": "echo 'no build script'"
+    // Replace the placeholder build script
+    "build": "webpack --mode production"
   }
 }

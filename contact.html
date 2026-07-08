@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Pushkarjay Ajay</title>
+    
+    <!-- Link to external stylesheets and fonts -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <!-- Header Section -->
+    <!-- Placeholder for dynamically loaded header content -->
+    <div id="header-content"></div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <!-- Section title with animation -->
             <h2 class="section-title animate__animated animate__fadeIn">Contact Me</h2>
+            
+            <!-- Contact container with two columns: contact info and form -->
             <div class="contact-container">
+                <!-- Contact Information -->
                 <div class="contact-info animate__animated animate__fadeInLeft">
                     <div class="contact-info-wrapper">
+                        <!-- Individual contact items with icons -->
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <p><a href="tel:+918210164935">+91-8210164935</a></p>
@@ -70,24 +51,31 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
                 <div class="contact-form animate__animated animate__fadeInRight">
                     <form id="contactForm">
+                        <!-- Input field for name -->
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
+                        <!-- Input field for email -->
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         </div>
+                        <!-- Input field for subject -->
                         <div class="form-group">
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
                         </div>
+                        <!-- Textarea for message -->
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
                         </div>
+                        <!-- Submit button -->
                         <button type="submit" class="btn primary-btn">Send Message</button>
                     </form>
                 </div>
@@ -95,60 +83,49 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Pushkarjay<span>Ajay</span></h2>
-                        <p>Computer Science Student & AI Enthusiast</p>
-                    </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h3>Contact Me</h3>
-                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                    </div>
-                    <div class="footer-social">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Contact Call-to-Action Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <!-- CTA message and button -->
+                <h2>Interested in working together?</h2>
+                <p>Let's discuss how I can contribute to your project or team.</p>
+                <a href="contact.html" class="btn primary-btn">Get In Touch</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Pushkarjay Ajay.</p>
-                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
-            </div>
-        </div>
-    </footer>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Placeholder for dynamically loaded footer content -->
+    <div id="footer-content"></div>
 
     <!-- Back to Top Button -->
+    <!-- Button to scroll back to the top of the page -->
     <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Scripts -->
+    <!-- External libraries and custom script -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Function to fetch and display dynamic sections (header and footer)
+        async function fetchAndDisplaySection(url, targetId, selector) {
+            const response = await fetch(url); // Fetch the content from the given URL
+            const text = await response.text(); // Parse the response as text
+            const tempDiv = document.createElement('div'); // Temporary container for parsing HTML
+            tempDiv.innerHTML = text;
+            const section = tempDiv.querySelector(selector); // Extract the desired section
+            document.getElementById(targetId).appendChild(section); // Append the section to the target element
+        }
+
+        // Event listener to load header and footer after DOM content is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplaySection('header.html', 'header-content', 'header'); // Fetch the header
+            fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch the footer
+        });
+    </script>
 </body>
 </html>
 
