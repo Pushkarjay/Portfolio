@@ -147,6 +147,23 @@
         </div>
     </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Impact</span>
+                <h2 class="section-title">Hackathons & Achievements</h2>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div id="achievements-content" class="timeline-content"></div>
+            <div class="section-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="achievements.html" class="btn primary-btn">View All Achievements</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Education & Experience Section -->
     <section id="education-experience" class="education-experience">
         <div class="container">
@@ -212,6 +229,13 @@
                     </div>
                     <div class="stat-number" data-count="4">0</div>
                     <div class="stat-title">Experience Roles</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-number" data-count="7">0</div>
+                    <div class="stat-title">Hackathons & Awards</div>
                 </div>
             </div>
         </div>
@@ -304,6 +328,7 @@
             fetchAndDisplayContent('education.html', 'education-content', 3);
             fetchAndDisplayContent('experience.html', 'experience-content', 3);
             fetchAndDisplayContent('projects.html', 'projects-content', projectsLimit);
+            fetchAndDisplayContent('achievements.html', 'achievements-content', 3);
             fetchAndDisplaySkills('skills.html', 'skills-content', skillsLimit);
             fetchAndDisplayAbout('about.html', 'about-content'); // Fetch the about section
             fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch the footer
