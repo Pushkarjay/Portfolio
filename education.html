@@ -2,71 +2,55 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education | Pushkarjay Ajay</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css for animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html" class="active">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <!-- Header Section -->
+    <!-- Content for the header will be dynamically fetched and inserted here -->
+    <div id="header-content"></div>
 
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">My Journey</span>
                 <h2 class="section-title">Education</h2>
+                <!-- Decorative elements below the title -->
                 <div class="section-decoration">
                     <span></span><span></span><span></span>
                 </div>
             </div>
 
+            <!-- Timeline Content -->
             <div class="timeline-content">
                 <!-- Education Timeline -->
                 <div class="timeline active" id="education">
+                    <!-- Timeline Item: B.Tech -->
                     <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">2022 – 2026</div>
                         <div class="timeline-content">
                             <h3>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
                             <h4>KIIT University, Bhubaneswar</h4>
+                            <p>CGPA: 7.56</p>
                         </div>
                     </div>
 
+                    <!-- Timeline Item: Intermediate -->
                     <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">2022</div>
@@ -77,6 +61,7 @@
                         </div>
                     </div>
 
+                    <!-- Timeline Item: High School -->
                     <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">2020</div>
@@ -91,60 +76,43 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Pushkarjay<span>Ajay</span></h2>
-                        <p>Computer Science Student & AI Enthusiast</p>
-                    </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h3>Contact Me</h3>
-                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                    </div>
-                    <div class="footer-social">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Pushkarjay Ajay.</p>
-                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Section -->
+    <!-- Content for the footer will be dynamically fetched and inserted here -->
+    <div id="footer-content"></div>
 
     <!-- Back to Top Button -->
+    <!-- Button to scroll back to the top of the page -->
     <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Scripts -->
+    <!-- AOS (Animate on Scroll) library -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
+    <script>
+        /**
+         * Fetches an HTML section from a given URL and appends it to a target element.
+         * @param {string} url - The URL of the HTML file to fetch.
+         * @param {string} targetId - The ID of the target element where the content will be inserted.
+         * @param {string} selector - The CSS selector to extract the specific section from the fetched HTML.
+         */
+        async function fetchAndDisplaySection(url, targetId, selector) {
+            const response = await fetch(url); // Fetch the HTML file
+            const text = await response.text(); // Get the response as text
+            const tempDiv = document.createElement('div'); // Create a temporary div to parse the HTML
+            tempDiv.innerHTML = text; // Set the fetched HTML as the content of the div
+            const content = tempDiv.querySelector(selector); // Extract the desired section using the selector
+            document.getElementById(targetId).appendChild(content); // Append the section to the target element
+        }
+
+        // Event listener to fetch and display header and footer after the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplaySection('header.html', 'header-content', 'header'); // Fetch and insert the header
+            fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch and insert the footer
+        });
+    </script>
 </body>
 
 </html>

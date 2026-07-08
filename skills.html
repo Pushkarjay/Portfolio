@@ -1,11 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and external stylesheets -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Pushkarjay Ajay</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS library for scroll animations -->
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header-content"></div> <!-- Placeholder for dynamically loaded header -->
+
+    <!-- Page Banner Section -->
+    <section class="page-banner">
+        <div class="container">
+            <!-- Page title and description -->
+            <h1>My Skills</h1>
+            <p>A comprehensive overview of my technical and soft skills</p>
+            <!-- Technical Skills Overview -->
+            <p>
+                <strong>Technical Skills:</strong><br>
+                AI/ML: Artificial Intelligence, Machine Learning, Generative AI.<br>
+                Web Development: HTML, CSS, JavaScript, React, Node.js, Express, Bootstrap, REST APIs.<br>
+                Data Analytics/Science: Excel, MySQL, PostgreSQL, Tableau, Power BI.<br>
+                Cybersecurity: CCNA.<br>
+                Software Development: Python, C, C++, SQL.<br>
+                Python Libraries: NumPy, Pandas, Matplotlib, TensorFlow, OpenCV, BrowserUse, Tkinter, Pillow.<br>
+                Cloud & Dev Tools: Google Cloud Platform, Git, Databricks, AWS, Azure.<br>
+                Miscellaneous: OOPs, DSA, Cloud Computing, Kaggle.
+            </p>
+            <!-- Soft Skills Overview -->
+            <p>
+                <strong>Soft Skills:</strong><br>
+                Interpersonal: Communication, Teamwork, Problem Solving, Critical Thinking.<br>
+                Professional: Strategic Thinking, Organization Skills, Ethics in Decision-Making, In-depth Analysis.<br>
+                Management: Project Management, Risk Management, Social Entrepreneurship, Decision-Making.<br>
+                Languages: English, Hindi, Telugu.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+    <div class="container">
+        <div class="skills-container">
+            <!-- Programming Languages Section -->
+            <div class="skills-category-card" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i> <!-- Icon for programming languages -->
+                    </div>
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skills-grid">
+                    <!-- Python Skill -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i> <!-- Python icon -->
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div> <!-- Skill progress bar -->
+                        </div>
+                        <span class="skill-percent">90%</span> <!-- Skill percentage -->
+                    </div>
+                    <!-- JavaScript Skill -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i> <!-- JavaScript icon -->
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <!-- C Skill -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i> <!-- Generic code icon -->
+                        </div>
+                        <h4>C</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Web Development Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h4>HTML</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h4>CSS</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h4>JavaScript</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>PostgreSQL</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h4>UI/UX Design</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Machine Learning & AI Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Machine Learning & AI</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                    <h4>OpenCV</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>NumPy</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-table"></i></div>
+                    <h4>Pandas</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Matplotlib</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h4>Artificial Intelligence</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h4>AutoML</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-search"></i></div>
+                    <h4>Object Detection</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4>Predictive Analytics</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>TensorFlow</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tree"></i></div>
+                    <h4>Random Forest Classifier</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Tools & Technologies</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>VS Code</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h4>Cloud Computing</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                    <h4>Linux</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>PostgreSQL</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-window-restore"></i></div>
+                    <h4>Windows OS</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-window-maximize"></i></div>
+                    <h4>Tkinter</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Industry Knowledge Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3>Industry Knowledge</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Cybersecurity</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-video"></i></div>
+                    <h4>Video Processing</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h4>Virtual Prototyping</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>Project Management</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h4>Business Analytics</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cog"></i></div>
+                    <h4>Operational Efficiency</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Exoplanet Research</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interpersonal Skills Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Interpersonal Skills</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                    <h4>Communication</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+                    <h4>Teamwork</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Problem Solving</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Critical Thinking</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chess"></i></div>
+                    <h4>Strategic Thinking</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                    <h4>Organization Skills</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h4>Ethics in Decision-Making</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-search-plus"></i></div>
+                    <h4>In-depth Analysis</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>Languages</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-language"></i></div>
+                    <h4>English</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                    <span class="skill-percent">100%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-language"></i></div>
+                    <h4>Hindi</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                    <span class="skill-percent">100%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-language"></i></div>
+                    <h4>Telugu</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <span class="skill-percent">60%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Skills Section -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <h3>Other Skills</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                    <h4>Microsoft Office</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Exoplanet Research</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h4>Automated Processes</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>Mathematical Optimization</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h4>Risk Management</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Social Entrepreneurship</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-table-tennis"></i></div>
+                    <h4>Badminton</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <div id="footer-content"></div> <!-- Placeholder for dynamically loaded footer -->
+
+    <!-- Scripts -->
+    <script>
+        // Function to fetch and display sections dynamically
+        async function fetchAndDisplaySection(url, targetId, selector) {
+            const response = await fetch(url); // Fetch the content from the given URL
+            const text = await response.text(); // Convert the response to text
+            const tempDiv = document.createElement('div'); // Create a temporary div to parse the HTML
+            tempDiv.innerHTML = text; // Set the fetched HTML content
+            const section = tempDiv.querySelector(selector); // Extract the desired section
+            document.getElementById(targetId).appendChild(section); // Append the section to the target element
+        }
+
+        // Event listener to load header and footer on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplaySection('header.html', 'header-content', 'header'); // Fetch the header
+            fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch the footer
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- AOS library for animations -->
+    <script src="script.js"></script> <!-- Custom JavaScript -->
+</body>
+</html>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -49,19 +639,20 @@
             <p>A comprehensive overview of my technical and soft skills</p>
             <p>
                 <strong>Technical Skills:</strong><br>
-                Programming Languages: Python, JavaScript, C, HTML, CSS, SQL.<br>
-                Web Development: HTML, CSS, JavaScript, PostgreSQL, Responsive Design, UI/UX, Animation.<br>
-                Machine Learning & AI: OpenCV, NumPy, Pandas, Matplotlib, TensorFlow, Random Forest Classifier.<br>
-                AI/ML Techniques: Computer Vision, Deep Learning, Data Analysis, Predictive Analytics, Object Detection, AutoML.<br>
-                Tools & Technologies: Git, GitHub, VS Code, AWS, Cloud Computing, Linux, PostgreSQL, Windows OS, Tkinter.<br>
-                Industry Knowledge: Cybersecurity, Video Processing, Virtual Prototyping, Exoplanet Research.<br>
-                Other Technical: Microsoft Office, Automated Processes, Mathematical Optimization.
+                AI/ML: Artificial Intelligence, Machine Learning, Generative AI.<br>
+                Web Development: HTML, CSS, JavaScript, React, Node.js, Express, Bootstrap, REST APIs.<br>
+                Data Analytics/Science: Excel, MySQL, PostgreSQL, Tableau, Power BI.<br>
+                Cybersecurity: CCNA.<br>
+                Software Development: Python, C, C++, SQL.<br>
+                Python Libraries: NumPy, Pandas, Matplotlib, TensorFlow, OpenCV, BrowserUse, Tkinter, Pillow.<br>
+                Cloud & Dev Tools: Google Cloud Platform, Git, Databricks, AWS, Azure.<br>
+                Miscellaneous: OOPs, DSA, Cloud Computing, Kaggle.
             </p>
             <p>
                 <strong>Soft Skills:</strong><br>
                 Interpersonal: Communication, Teamwork, Problem Solving, Critical Thinking.<br>
                 Professional: Strategic Thinking, Organization Skills, Ethics in Decision-Making, In-depth Analysis.<br>
-                Management: Project Management, Risk Management, Social Entrepreneurship.<br>
+                Management: Project Management, Risk Management, Social Entrepreneurship, Decision-Making.<br>
                 Languages: English, Hindi, Telugu.
             </p>
         </div>
@@ -100,18 +691,38 @@
                         </div>
                         <span class="skill-percent">75%</span>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>C</h4>
-                        <div class="skill-level">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                        <span class="skill-percent">80%</span>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
                     </div>
+                    <h4>C</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>C++</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>SQL</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
                 </div>
             </div>
+        </div>
         </div>
         <!-- Web Development -->
         <div class="skills-category-card" data-aos="fade-up" data-aos-delay="100">
@@ -157,6 +768,74 @@
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
                     <h4>UI/UX Design</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h4>React</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h4>Node.js</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h4>Express</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Analytics & Science -->
+        <div class="skills-category-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="category-header">
+                <div class="category-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Data Analytics & Science</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                    <h4>Excel</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>MySQL</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4>Power BI</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-table"></i></div>
+                    <h4>Tableau</h4>
                     <div class="skill-level">
                         <div class="skill-progress" style="width: 70%"></div>
                     </div>
@@ -254,6 +933,30 @@
                     </div>
                     <span class="skill-percent">70%</span>
                 </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-magic"></i></div>
+                    <h4>Generative AI</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h4>BrowserUse</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-image"></i></div>
+                    <h4>Pillow</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
             </div>
         </div>
 
@@ -337,6 +1040,30 @@
                         <div class="skill-progress" style="width: 65%"></div>
                     </div>
                     <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>Databricks</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Azure</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>Kaggle</h4>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
                 </div>
             </div>
         </div>
@@ -641,4 +1368,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

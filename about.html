@@ -1,112 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Pushkarjay Ajay</title>
+    
+    <!-- Link to external stylesheets and fonts -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <!-- Header Section -->
+    <!-- Placeholder for dynamically loaded header content -->
+    <div id="header-content"></div>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">About Me</h2>
-            <div class="about-content-card">
-                <div class="about-text animate__animated animate__fadeInUp">
-                    <h3>Professional Summary</h3>
-                    <p>Dedicated Computer Science student with strong programming, problem-solving, and analytical skills. Proficient in Python, AI/ML tools, and cybersecurity, with hands-on experience in video processing and project management. Actively seeking opportunities to leverage technical expertise and grow professionally.</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/Pushkarjay" target="_blank" class="animate__animated animate__bounceIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Pushkarjay" target="_blank" class="animate__animated animate__bounceIn animate__delay-1s"><i class="fab fa-github"></i></a>
-                        <a href="https://leetcode.com/u/pushkarjay" target="_blank" class="animate__animated animate__bounceIn animate__delay-2s"><i class="fas fa-code"></i></a>
-                        <a href="https://hackerrank.com/profile/pushkarjay" target="_blank" class="animate__animated animate__bounceIn animate__delay-3s"><i class="fab fa-hackerrank"></i></a>
-                        <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Section title with animation -->
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">Who Am I ?</h2>
+                <div class="section-decoration">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <!-- Profile Image and Experience Badge -->
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <div class="about-image-container">
+                        <div class="profile-placeholder">
+                            <img src="profile_picture.jpg" alt="Profile Image">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Text Content -->
+                <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Aspiring Computer Science Student</h3>
+                    <p data-aos="fade-up" data-aos-delay="400">Aspiring Computer Science student with hands-on experience in building full-stack web applications, AI/ML models, data science dashboards, and web automation tools. Passionate about solving real-world problems through technology, automation, and scalable digital solutions. Skilled in collaborative development and committed to continuous learning and innovation.</p>
+                    <!-- Personal Information -->
+                    <div class="about-info" data-aos="fade-up" data-aos-delay="600">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Pushkarjay Ajay</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">
+                                <a href="mailto:pushkarjay.ajay1@gmail.com">pushkarjay.ajay1@gmail.com</a>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">
+                                <a href="tel:+918210164935">+91-8210164935</a>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Bhubaneswar, India</span>
+                        </div>
+                    </div>
+                    <div class="about-cta" data-aos="fade-up" data-aos-delay="700">
+                        <a href="contact.html" class="btn primary-btn">Contact Me</a>
+                        <a href="https://bit.ly/pushkarjay_cv" target="_blank" class="btn outline-btn">Download CV <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Pushkarjay<span>Ajay</span></h2>
-                        <p>Computer Science Student & AI Enthusiast</p>
-                    </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h3>Contact Me</h3>
-                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                    </div>
-                    <div class="footer-social">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Pushkarjay Ajay.</p>
-                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Section -->
+    <!-- Placeholder for dynamically loaded footer content -->
+    <div id="footer-content"></div>
 
+    <script>
+        async function fetchAndDisplaySection(url, targetId, selector) {
+            const response = await fetch(url);
+            const text = await response.text();
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = text;
+            const section = tempDiv.querySelector(selector);
+            document.getElementById(targetId).appendChild(section);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplaySection('header.html', 'header-content', 'header'); // Fetch the header
+            fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch the footer
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

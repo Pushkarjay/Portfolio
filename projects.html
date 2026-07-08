@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and external stylesheets -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Pushkarjay Ajay</title>
@@ -11,38 +12,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">Pushkarjay<span class="accent">Ajay</span></span>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <!-- Header Section -->
+    <div id="header-content"></div> <!-- Placeholder for dynamically loaded header -->
 
-    <!-- Page Banner -->
+    <!-- Page Banner Section -->
     <section class="page-banner">
         <div class="container">
             <h1>My Projects</h1>
@@ -53,39 +26,45 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
+            <!-- Section Header -->
             <div class="section-header">
                 <h2 class="section-title">My Projects</h2>
                 <p>Showcasing my technical skills and creative solutions</p>
             </div>
 
-            <!-- Web Development -->
+            <!-- Web Development Projects -->
             <div class="projects-category-card">
                 <h3 class="category-title">Web Development</h3>
                 <div class="projects-grid">
                     <!-- HMart Project -->
                     <div class="project-card" id="hmart" data-aos="fade-up">
+                        <!-- Project Image -->
                         <div class="project-img">
                             <div class="project-img-placeholder">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
                         </div>
+                        <!-- Project Content -->
                         <div class="project-content">
-                            <h3>HMart - E-commerce Platform</h3>
-                            <p>A full-stack e-commerce platform with product management, user authentication, and payment integration. Features include product search, filtering, cart management, and responsive design.</p>
+                            <h3>HMart – E-commerce Platform</h3>
+                            <p>Solved the problem of students needing to exchange objects and snacks within the college by creating a full-stack e-commerce platform with product management and authentication features.</p>
+                            <!-- Project Tags -->
                             <div class="project-tags">
                                 <span>JavaScript</span>
-                                <span>HTML/CSS</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
                                 <span>PostgreSQL</span>
-                                <span>Responsive Design</span>
                             </div>
+                            <!-- Project Details -->
                             <div class="project-details">
                                 <div class="detail-item">
                                     <span class="detail-label">Role:</span>
                                     <span class="detail-value">Full-stack Developer</span>
                                 </div>
                             </div>
+                            <!-- Project Links -->
                             <div class="project-links">
-                                <a href="https://hmart-nog2.onrender.com/" target="_blank" class="btn small-btn">View Demo</a>
+                                <a href="https://hmart-nog2.onrender.com/" target="_blank" class="btn small-btn">View Live</a>
                                 <a href="https://github.com/Pushkarjay/HMart.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
                             </div>
                         </div>
@@ -93,49 +72,184 @@
 
                     <!-- Weather Dashboard Project -->
                     <div class="project-card" id="weather-dashboard" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Project Image -->
                         <div class="project-img">
                             <div class="project-img-placeholder">
                                 <i class="fas fa-cloud-sun"></i>
                             </div>
                         </div>
+                        <!-- Project Content -->
                         <div class="project-content">
                             <h3>Weather Dashboard</h3>
                             <p>A responsive weather dashboard application that provides real-time weather updates for any location. Features include a search bar, current weather details, and a 5-day forecast.</p>
+                            <!-- Project Tags -->
                             <div class="project-tags">
                                 <span>JavaScript</span>
                                 <span>HTML/CSS</span>
                                 <span>API Integration</span>
                                 <span>Responsive Design</span>
                             </div>
+                            <!-- Project Details -->
                             <div class="project-details">
                                 <div class="detail-item">
                                     <span class="detail-label">Role:</span>
                                     <span class="detail-value">Frontend Developer</span>
                                 </div>
                             </div>
+                            <!-- Project Links -->
                             <div class="project-links">
                                 <a href="https://pushkarjay.github.io/weather-dashboard/" target="_blank" class="btn small-btn">View Live</a>
                                 <a href="https://github.com/Pushkarjay/weather-dashboard.git" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Section-Swap-System Project -->
+                    <div class="project-card" id="section-swap" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Project Image -->
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                        </div>
+                        <!-- Project Content -->
+                        <div class="project-content">
+                            <h3>Section-Swap-System</h3>
+                            <p>Addressed the difficulty of finding mutual section swaps by building a platform to automate the matching process, helping students easily find potential swaps and avoid disorganization.</p>
+                            <!-- Project Tags -->
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <!-- Project Details -->
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Web Developer</span>
+                                </div>
+                            </div>
+                            <!-- Project Links -->
+                            <div class="project-links">
+                                <a href="https://section-swap-kiit.onrender.com/" target="_blank" class="btn small-btn">View Live</a>
+                                <a href="https://github.com/Pushkarjay/Section-Swap-KIIT" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certification-Automator Project -->
+                    <div class="project-card" id="cert-automator" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Project Image -->
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <!-- Project Content -->
+                        <div class="project-content">
+                            <h3>Certification-Automator</h3>
+                            <p>Developed for SURE Trust to solve the issue of manual certificate processing. This automated system generates certificates with verifiable QR codes from a database, ensuring authenticity.</p>
+                            <!-- Project Tags -->
+                            <div class="project-tags">
+                                <span>Google Cloud</span>
+                                <span>Python</span>
+                                <span>React</span>
+                                <span>RESTAPI</span>
+                            </div>
+                            <!-- Project Details -->
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Cloud/Web Developer</span>
+                                </div>
+                            </div>
+                            <!-- Project Links -->
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Certification-Automator" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Career Advisor Project -->
+                    <div class="project-card" id="ai-career-advisor" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Career Advisor</h3>
+                            <p>Intelligent advisory web app that guides careers using AI recommendations. Built with React frontend, Python backend, and Google Cloud integration for scalable AI-powered career guidance.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>AI</span>
+                                <span>Google Cloud</span>
+                                <span>REST API</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Full Stack & AI Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://ai-career-advisor-id.web.app/" target="_blank" class="btn small-btn">View Live</a>
+                                <a href="https://github.com/Pushkarjay/AI-CAREER-ADIVISOR" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- AI & ML -->
+            <!-- AI & ML Projects -->
             <div class="projects-category-card">
                 <h3 class="category-title">AI & ML</h3>
                 <div class="projects-grid">
+                    <!-- Crop Yield Prediction -->
+                    <div class="project-card" id="crop-yield" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Crop Yield Prediction</h3>
+                            <p>Built a machine learning pipeline for crop production forecasting using Gradient Boosting (96.27% R² accuracy). Created an analytical dashboard for stakeholders to visualize insights across 22 crops and 20 Indian states.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Flask API</span>
+                                <span>Dashboard</span>
+                                <span>Sklearn</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Data Science + Dashboard Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://pushkarjay.github.io/Crop-Yield-Prediction/Phase-2/dashboard/" target="_blank" class="btn small-btn">View Dashboard</a>
+                                <a href="https://github.com/Pushkarjay/Crop-Yield-Prediction" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Research Paper Project -->
-                    <div class="project-card" id="research" data-aos="fade-up">
+                    <div class="project-card" id="research" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Project Image -->
                         <div class="project-img">
                             <div class="project-img-placeholder">
                                 <i class="fas fa-microscope"></i>
                             </div>
                         </div>
+                        <!-- Project Content -->
                         <div class="project-content">
                             <h3>Comparative Analysis of VGG16 and ResNet50 Architectures on CIFAR-10 Image Classification</h3>
                             <p>Research paper comparing the performance, accuracy, and efficiency of VGG16 and ResNet50 deep learning architectures on the CIFAR-10 dataset for image classification tasks.</p>
+                            <!-- Project Tags -->
                             <div class="project-tags">
                                 <span>Deep Learning</span>
                                 <span>Computer Vision</span>
@@ -143,12 +257,14 @@
                                 <span>TensorFlow</span>
                                 <span>Research</span>
                             </div>
+                            <!-- Project Details -->
                             <div class="project-details">
                                 <div class="detail-item">
                                     <span class="detail-label">Role:</span>
                                     <span class="detail-value">Lead Researcher</span>
                                 </div>
                             </div>
+                            <!-- Project Links -->
                             <div class="project-links">
                                 <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn">View Paper</a>
                                 <a href="https://github.com/Pushkarjay/Comparative-Analysis-of-VGG16-and-ResNet50-Architectures-on-CIFAR-10-Image-Classification.git" target="_blank" class="btn small-btn secondary-btn">View Code</a>
@@ -156,31 +272,91 @@
                         </div>
                     </div>
 
-                    <!-- Exoplanet Detection Project -->
-                    <div class="project-card" id="exoplanet" data-aos="fade-up" data-aos-delay="100">
+                    <!-- VenueFlow Project -->
+                    <div class="project-card" id="venueflow" data-aos="fade-up" data-aos-delay="200">
                         <div class="project-img">
                             <div class="project-img-placeholder">
-                                <i class="fas fa-globe"></i>
+                                <i class="fas fa-map-marked-alt"></i>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Exoplanet Detection Using AI</h3>
-                            <p>Utilized NASA Kepler data and Random Forest Classifier to identify exoplanets. The model analyzes stellar light curves to detect transit signatures indicative of orbiting planets.</p>
+                            <h3>VenueFlow – AI Crowd Intelligence</h3>
+                            <p>Real-time crowd monitoring and prediction system for large events. Features crowd surge prediction, dynamic exit routing, heatmap visualization, AI insights, and personalized attendee assistant. Built and deployed on Google Cloud Run.</p>
                             <div class="project-tags">
+                                <span>AI</span>
+                                <span>Real-time</span>
+                                <span>Google Cloud</span>
                                 <span>Python</span>
-                                <span>Machine Learning</span>
-                                <span>Data Analysis</span>
-                                <span>Astronomy</span>
+                                <span>Full-stack</span>
                             </div>
                             <div class="project-details">
                                 <div class="detail-item">
                                     <span class="detail-label">Role:</span>
-                                    <span class="detail-value">Data Scientist</span>
+                                    <span class="detail-value">Full Stack & AI Developer</span>
                                 </div>
                             </div>
                             <div class="project-links">
-                                <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn">View Project</a>
-                                <a href="https://colab.research.google.com/drive/1IQ620HyZVuGMYrVP2NOpbqlcUTK3uo5c?usp=sharing" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                                <a href="https://lnkd.in/gdQHxUfq" target="_blank" class="btn small-btn">View Live</a>
+                                <a href="https://lnkd.in/gw7jE5xp" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exoplanet Detection Project -->
+                    <div class="project-card" id="exoplanet" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                        </div>
+                        <!-- Project Content -->
+                        <div class="project-content">
+                            <h3>Exoplanet Detection Using AI</h3>
+                            <p>Used NASA Kepler data and Random Forest to identify exoplanets with high accuracy.</p>
+                            <!-- Project Tags -->
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Astronomy</span>
+                            </div>
+                            <!-- Project Details -->
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Artificial Intelligence</span>
+                                </div>
+                            </div>
+                            <!-- Project Links -->
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Exoplanet-Detection-Using-AI" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facial Expression Recognition -->
+                    <div class="project-card" id="fer" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Facial Expression Recognition (FER)</h3>
+                            <p>Deep learning model for real-time facial expression classification using computer vision techniques.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Deep Learning</span>
+                                <span>Computer Vision</span>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Machine Learning Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Facial-Expression-Recognition-FER-" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -191,6 +367,63 @@
             <div class="projects-category-card">
                 <h3 class="category-title">Other Projects</h3>
                 <div class="projects-grid">
+                    <!-- SafeCom App -->
+                    <div class="project-card" id="safecom" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>SafeCom – CCTV Service Platform</h3>
+                            <p>Comprehensive CCTV installation, maintenance, and repair service platform with customer mobile app (Flutter), employee mobile app, admin dashboard (React/TypeScript), and Express backend. Features booking, payments, job management, and analytics. Deployed on Firebase & Google Cloud Run.</p>
+                            <div class="project-tags">
+                                <span>Flutter</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Firebase</span>
+                                <span>Google Cloud</span>
+                                <span>Express</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">CTO & Technical Lead</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/SafeCom-Application" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cold Mailing -->
+                    <div class="project-card" id="cold-mailing" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Cold-Mailing Automation</h3>
+                            <p>Automated email outreach system built with Python for efficient cold emailing campaigns.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Automation</span>
+                                <span>Email</span>
+                            </div>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">Developer</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Pushkarjay/Cold-Mailing" target="_blank" class="btn small-btn secondary-btn">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Python Countdown Timer -->
                     <div class="project-card" data-aos="fade-up">
                         <div class="project-img">
@@ -263,51 +496,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Pushkarjay<span>Ajay</span></h2>
-                        <p>Computer Science Student & AI Enthusiast</p>
-                    </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="https://bit.ly/pushkarjay_cv" target="_blank">CV link : bit.ly/pushkarjay_cv</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h3>Contact Me</h3>
-                        <p><a href="mailto:pushkarjay.ajay1@gmail.com"><i class="fas fa-envelope"></i> pushkarjay.ajay1@gmail.com</a></p>
-                        <p><a href="tel:+918210164935"><i class="fas fa-phone"></i> +91-8210164935</a></p>
-                    </div>
-                    <div class="footer-social">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Pushkarjay" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://leetcode.com/u/pushkarjay" target="_blank"><i class="fas fa-code"></i></a>
-                            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                            <a href="https://instagram.com/pushkarjay" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Pushkarjay Ajay.</p>
-                <p>Designed with <i class="fas fa-heart"></i> by Pushkarjay Ajay</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Section -->
+    <div id="footer-content"></div> <!-- Placeholder for dynamically loaded footer -->
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top">
@@ -317,6 +507,23 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Function to fetch and display sections dynamically
+        async function fetchAndDisplaySection(url, targetId, selector) {
+            const response = await fetch(url);
+            const text = await response.text();
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = text;
+            const section = tempDiv.querySelector(selector);
+            document.getElementById(targetId).appendChild(section);
+        }
+
+        // Event listener to load header and footer on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplaySection('header.html', 'header-content', 'header'); // Fetch the header
+            fetchAndDisplaySection('footer.html', 'footer-content', 'footer'); // Fetch the footer
+        });
+    </script>
 </body>
 </html>
 
